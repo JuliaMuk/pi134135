@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1em;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+footer {
+    background-color: darkblue;
+    color:white;
+    padding: 20px 40px;
+}
+
+#about {
+    background-color: burlywood;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+#articles {
+    padding: 20px 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    text-align: justify;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+
+a:link {
+    color: red;
+}
+a:visited {
+    color:orange;
+}
+a:active{
+    color:blue;
+}
+a:hover {
+    color:purple;
+}
+a:focus{
+    color:yellow;
+}
+
+ol li:nth-child(odd) {
+    background-color: palevioletred;
+}
+
+ol.links li {
+    background-color: aqua;
+}
+
+
+p:lang(en){
+    color:green;
+}
+
+.h2-new::after {
+    content: "new";
+    font-size: 12px;
+    color: red;
+    margin-left: 15px;
+}
+
+
+.my-table {
+    border: solid 10px red;
+    border-collapse: collapse;
+}
+
+.my-table td,
+.my-table th{
+    border-bottom: solid 1px black;
+    padding: 10px 15px;
+}
+
+
+.my-table tr:nth-child(odd) {
+    color: red;
+}
+
+
+.my-table td:nth-child(even),
+.my-table th:nth-child(even) {
+    background-color: green;
+}
+
+.my-table tr:last-child td:nth-child(2) {
+    text-align: center;
+}
+
+
+#register {
+    width: 320px;
+    margin: 10px auto;
+    border-radius: 50px;
+    padding: 60px;
+    background-color: lightgrey;
+}
+
+#register input[type=text],
+#register input[type=password],
+#register textarea,
+#register select {
+    background-color: beige;
+    padding: 7px;
+    border-radius: 5px;
+    color: dimgray;
+    margin-bottom: 10px;
+    border:1px solid dimgray;
+}
+
+#register input[type=submit] {
+    background: dimgray;
+    border-radius: 15px;
+    padding: 7px;
+    color:white;
+    border:none;
+}
+#register input[type=submit]:hover {
+    background: black;
+}
+
+#register input[type=radio]{
+    accent-color: dimgray;
+}

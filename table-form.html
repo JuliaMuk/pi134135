@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>таблицы и формы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="my-table">
+        <caption>Счет</caption>
+        <thead>
+            <tr>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ручка</td>
+                <td>50 &#8381;</td>
+                <td rowspan="2">4</td>
+                <td>200 &#8381;</td>
+            </tr>
+            <tr>
+                <td>Карандаш</td>
+                <td>25 &#8381;</td>
+                <td>100 &#8381;</td>
+            </tr>
+            <tr>
+                <td>Линейка</td>
+                <td>10 &#8381;</td>
+                <td>10</td>
+                <td>100 &#8381;</td>
+            </tr>
+            <tr>
+                <td colspan="3">Итого</td>
+                <td>400 &#8381;</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form id="register" action="">
+        <label for="login">Введите логин</label><br>
+        <input type="text" id="login" name="login" placeholder="Логин" required><br>
+        <label for="pass">Введите пароль</label><br>
+        <input type="password" id="pass" name="pass" placeholder="Пароль" required><br>
+        <input type="radio" id="student" name="role" checked>
+        <label for="student">студент</label><br>
+        <input type="radio" id="teacher" name="role">
+        <label for="teacher">учитель</label><br>
+
+        <label for="occupation">Направление</label><br>
+        <select name="occupation" id="occupation">
+            <option value="it">Программист</option>
+            <option value="design">Дизайнер</option>
+            <option value="manager">Менеджер</option>
+        </select><br>
+        <label for="about">О себе</label><br>
+        <textarea name="about" id="about" rows="10" cols="30"></textarea><br>
+
+
+        <input type="submit" value="Зарегистрироваться">
+        <input type="reset">
+    </form>
+
+
+</body>
+</html>
